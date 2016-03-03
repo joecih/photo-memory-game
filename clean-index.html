@@ -2,20 +2,90 @@
 <html>
 
 <head>
-    <title></title>
+    <title>Photo Memory Game2</title>
     <link rel="stylesheet" type="text/css" href="styles/clean-styles.css" />
 </head>
 
 <body>
     <div id="header">
         <div id="left-header">
+            <div class="header-text logo"><img src="images/logo.png"></div>
             <div class="header-text">Level: 1</div>
             <div class="header-text">Moves: 0</div>
         </div>
         <div id="right-header">
-            <button type="">Start Over</button>
+            <button type="" onclick="restart();">Start Over</button>
         </div>
     </div>
+    <p></p>
+    <div id="game-wrapper">
+        <div class="tile">
+            <div class="inside-tile" onclick="flip(this);">
+                <div class="back"></div>
+                <div class="front">
+                    <img src="images/default/monsters-01.png">
+                </div>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="inside-tile" onclick="flip(this);">
+                <div class="back"></div>
+                <div class="front">
+                    <img src="images/default/monsters-02.png">
+                </div>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="inside-tile" onclick="flip(this);">
+                <div class="back"></div>
+                <div class="front">
+                    <img src="images/default/monsters-03.png">
+                </div>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="inside-tile" onclick="flip(this);">
+                <div class="back"></div>
+                <div class="front">
+                    <img src="images/default/monsters-04.png">
+                </div>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="inside-tile" onclick="flip(this);">
+                <div class="back"></div>
+                <div class="front">
+                    <img src="images/default/monsters-05.png">
+                </div>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="inside-tile" onclick="flip(this);">
+                <div class="back"></div>
+                <div class="front">
+                    <img src="images/default/monsters-06.png">
+                </div>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="inside-tile" onclick="flip(this);">
+                <div class="back"></div>
+                <div class="front">
+                    <img src="images/default/monsters-07.png">
+                </div>
+            </div>
+        </div>
+        <div class="tile">
+            <div class="inside-tile" onclick="flip(this);">
+                <div class="back"></div>
+                <div class="front">
+                    <img src="images/default/monsters-08.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="scripts/app.js"></script>
 
 </body>
 
