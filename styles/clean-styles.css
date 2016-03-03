@@ -1,0 +1,39 @@
+body {
+    background-color: lightgrey;
+    max-width: 960px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+#header {}
+
+#left-header {
+    float: left;
+}
+
+.header-text {
+    float: left;
+    color: #28aadc;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#right-header {
+    float: right;
+}
+
+button {
+    border: none;
+    outline: 0;
+    background-color: darkred;
+    border-radius: 10px;
+    padding: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #191919;
+}

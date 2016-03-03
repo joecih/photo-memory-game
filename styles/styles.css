@@ -18,12 +18,12 @@ body {
     position: relative;
     top: 52px;
     bottom: 52px;
-    height: 85%;
+    /*height: 85%;*/
     width: 70%;
     margin: auto;
     /*max-width: 1024px;*/
-    background-color: lightblue;
-    border: 2px dotted yellow;
+    /*background-color: lightblue;
+    border: 2px dotted yellow;*/
     text-align: center;
 }
 
@@ -31,19 +31,10 @@ body {
     content: '';
     display: inline-block;
     vertical-align: bottom;
-    height: 48%;
+    height: 40%;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 50px;
-    width: 100%;
-    margin: auto;
-    background-color: #369;
-    /*border: 2px dotted yellow;*/
-}
+
 
 .mg_tile {
     width: 150px;
@@ -105,6 +96,18 @@ body {
 .mg_meta-left,
 .mg_meta-right {
     margin: 10px 10px 10px 10px;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    background-color: #369;
+    /*border: 2px dotted yellow;*/
 }
 
 
