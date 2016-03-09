@@ -1,0 +1,137 @@
+body {
+    width: 100%;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    background-color: #369;
+    /*border: 2px dotted yellow;*/
+}
+
+.viewport {
+    position: relative;
+    top: 52px;
+    bottom: 52px;
+    /*height: 85%;*/
+    width: 70%;
+    margin: auto;
+    /*max-width: 1024px;*/
+    /*background-color: lightblue;
+    border: 2px dotted yellow;*/
+    text-align: center;
+}
+
+.viewport:before {
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    height: 40%;
+}
+
+
+
+.mg_tile {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 0 auto;
+    border: 1px dotted #822;
+    /*vertical-align: middle;*/
+}
+
+/*
+* NAVBAR Components =================================================
+*/
+.mg_meta-right {
+    float: right;
+}
+.mg_meta-right button {
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: 0;
+    padding: 7px;
+    background-color: #ff4500;
+    color: white;
+}
+.mg_meta-left {
+    font-family: Verdana;
+    float: left;
+    /*border: 1px dotted orange;*/
+    margin: 10px 10px 10px 10px;
+    color: white;
+}
+.mg_logo {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #fff;
+    background: url(../images/logo.png) no-repeat;
+    background-size: 25px 25px;
+    /*-moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    box-shadow: 10px 10px 5px #ccc;*/
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    float: left;
+}
+.mg_logo:hover {
+    -webkit-transform: rotate(45deg);
+    /*-webkit-transition-delay: 2s;*/
+    -webkit-transition-duration: 1s;
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    /*transition-delay: 2s;*/
+    transition-duration: .500s;
+}
+.mg_logo,
+.mg_meta-left,
+.mg_meta-right {
+    margin: 10px 10px 10px 10px;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    margin: auto;
+    background-color: #369;
+    /*border: 2px dotted yellow;*/
+}
+
+
+
+
+
+
+
+/*img[src*="logo"] {
+    width: 100%;
+    box-shadow: 10px 10px 5px #888888;
+}*/
+
+
+/*
+.five {
+    clear: left;
+}
+
+img[src*="monsters"] {
+    width: 125px;
+}
+
+img[src*="logo"]{
+    width: 50px;
+    padding-top: 34%;
+}*/

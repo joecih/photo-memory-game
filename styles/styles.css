@@ -1,77 +1,58 @@
 body {
+    /*background-color: lightgrey;*/
+    max-width: 960px;
+    margin: auto;
+}
+
+img {
     width: 100%;
-    margin: auto;
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    margin: auto;
-    background-color: #369;
-    /*border: 2px dotted yellow;*/
+#header {
+    background-color: #1b799d;
+    padding: 10px;
+    height: 32px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 2px 2px 2px #191919;
 }
 
-.viewport {
-    position: relative;
-    top: 52px;
-    bottom: 52px;
-    /*height: 85%;*/
-    width: 70%;
-    margin: auto;
-    /*max-width: 1024px;*/
-    /*background-color: lightblue;
-    border: 2px dotted yellow;*/
-    text-align: center;
+#left-header {
+    float: left;
 }
 
-.viewport:before {
-    content: '';
-    display: inline-block;
-    vertical-align: bottom;
-    height: 40%;
+.header-text {
+    float: left;
+    color: #28aadc;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
 }
 
-
-
-.mg_tile {
-    width: 150px;
-    height: 150px;
-    display: inline-block;
-    margin: 0 auto;
-    border: 1px dotted #822;
-    /*vertical-align: middle;*/
-}
-
-/*
-* NAVBAR Components =================================================
-*/
-.mg_meta-right {
+#right-header {
     float: right;
 }
-.mg_meta-right button {
+
+button {
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
     outline: 0;
-    padding: 7px;
-    background-color: #ff4500;
-    color: white;
+    background-color: #dd9411;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #191919;
 }
-.mg_meta-left {
-    font-family: Verdana;
-    float: left;
-    /*border: 1px dotted orange;*/
-    margin: 10px 10px 10px 10px;
-    color: white;
+
+#game-wrapper {
+    clear: both;
+    overflow: hidden;
+    /*border: 2px dotted lightseagreen;*/
 }
-.mg_logo {
-    width: 25px;
-    height: 25px;
-    border: 2px solid #fff;
-    background: url(../images/logo.png) no-repeat;
+
+.logo {
+    width: 28px;
+        border: 2px solid #fff;
     background-size: 25px 25px;
     /*-moz-box-shadow: 10px 10px 5px #ccc;
     -webkit-box-shadow: 10px 10px 5px #ccc;
@@ -79,59 +60,35 @@ body {
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
+}
+
+.tile {
+    position: relative;
     float: left;
+    height: 30%;
+    width: 25%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 5px solid #fff;
 }
-.mg_logo:hover {
-    -webkit-transform: rotate(45deg);
-    /*-webkit-transition-delay: 2s;*/
-    -webkit-transition-duration: 1s;
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    /*transition-delay: 2s;*/
-    transition-duration: .500s;
-}
-.mg_logo,
-.mg_meta-left,
-.mg_meta-right {
-    margin: 10px 10px 10px 10px;
+.tile:active {
+    border: 1px solid blue;
 }
 
-
-.footer {
-    position: fixed;
-    bottom: 0;
+.back,
+.front {
+    position: absolute;
+    top: 0;
     left: 0;
-    height: 50px;
     width: 100%;
-    margin: auto;
-    background-color: #369;
-    /*border: 2px dotted yellow;*/
+    height: 100%;
 }
 
-
-
-
-
-
-
-/*img[src*="logo"] {
-    width: 100%;
-    box-shadow: 10px 10px 5px #888888;
-}*/
-
-
-/*
-.five {
-    clear: left;
+.back {
+    background: url("../images/default/logo-bw.png") 50% 50% no-repeat;
+    background-color: darkgrey;
 }
 
-img[src*="monsters"] {
-    width: 125px;
+.front {
+    display: none;
 }
-
-img[src*="logo"]{
-    width: 50px;
-    padding-top: 34%;
-}*/
