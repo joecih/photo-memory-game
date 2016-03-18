@@ -2,89 +2,27 @@
 <html>
 
 <head>
-    <title>Photo Memory Game2</title>
+    <title>Photo Memory Game V2</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
 </head>
 
 <body>
-    <div id="header">
-        <div id="left-header">
-            <div class="header-text logo"><img src="images/logo.png"></div>
-            <div class="header-text">Level: 1</div>
-            <div class="header-text">Moves: 0</div>
-        </div>
-        <div id="right-header">
-            <button type="" onclick="restart();">Start Over</button>
-        </div>
-    </div>
-    <p></p>
-    <div id="game-wrapper">
-        <div class="tile">
-            <div class="inside-tile" onclick="flip(this);">
-                <div class="back"></div>
-                <div class="front">
-                    <img src="images/default/monsters-01.png">
-                </div>
-            </div>
-        </div>
-        <div class="tile">
-            <div class="inside-tile" onclick="flip(this);">
-                <div class="back"></div>
-                <div class="front">
-                    <img src="images/default/monsters-02.png">
-                </div>
-            </div>
-        </div>
-        <div class="tile">
-            <div class="inside-tile" onclick="flip(this);">
-                <div class="back"></div>
-                <div class="front">
-                    <img src="images/default/monsters-03.png">
-                </div>
-            </div>
-        </div>
-        <div class="tile">
-            <div class="inside-tile" onclick="flip(this);">
-                <div class="back"></div>
-                <div class="front">
-                    <img src="images/default/monsters-04.png">
-                </div>
-            </div>
-        </div>
-        <div class="tile">
-            <div class="inside-tile" onclick="flip(this);">
-                <div class="back"></div>
-                <div class="front">
-                    <img src="images/default/monsters-05.png">
-                </div>
-            </div>
-        </div>
-        <div class="tile">
-            <div class="inside-tile" onclick="flip(this);">
-                <div class="back"></div>
-                <div class="front">
-                    <img src="images/default/monsters-06.png">
-                </div>
-            </div>
-        </div>
-        <div class="tile">
-            <div class="inside-tile" onclick="flip(this);">
-                <div class="back"></div>
-                <div class="front">
-                    <img src="images/default/monsters-07.png">
-                </div>
-            </div>
-        </div>
-        <div class="tile">
-            <div class="inside-tile" onclick="flip(this);">
-                <div class="back"></div>
-                <div class="front">
-                    <img src="images/default/monsters-08.png">
-                </div>
-            </div>
-        </div>
+    <h1>Memory Game</h1>
+    <div id="button-bucket">
+        <input class="diff" id="easy" type="button" value="easy">
+        <input class="diff" id="med" type="button" value="med">
+        <input class="diff" id="hard" type="button" value="hard">
     </div>
     
+    <div class="counter">Moves: <span id="move-counter">0</span></div>
+    <div class="counter">Wins: <span id="wins-counter">0</span></div>
+    
+    <div id="mg-wrapper" class="mg-wrapper">
+        <div id="mg-contents" class="mg-contents">
+        </div>
+    </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="scripts/app.js"></script>
 
 </body>

@@ -1,94 +1,124 @@
 body {
-    /*background-color: lightgrey;*/
-    max-width: 960px;
-    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 img {
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#mg-wrapper {
     width: 100%;
+    max-width: 1024px;
+    margin: auto;
 }
 
-#header {
-    background-color: #1b799d;
-    padding: 10px;
-    height: 32px;
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: 2px 2px 2px #191919;
-}
-
-#left-header {
-    float: left;
-}
-
-.header-text {
-    float: left;
-    color: #28aadc;
-    font-size: 20px;
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-#right-header {
-    float: right;
-}
-
-button {
-    border: none;
-    outline: 0;
-    background-color: #dd9411;
-    border-radius: 5px;
-    padding: 5px;
-    color: #fff;
-    font-size: 14px;
-    cursor: pointer;
-    box-shadow: 2px 2px 2px #191919;
-}
-
-#game-wrapper {
-    clear: both;
-    overflow: hidden;
-    /*border: 2px dotted lightseagreen;*/
-}
-
-.logo {
-    width: 28px;
-        border: 2px solid #fff;
-    background-size: 25px 25px;
-    /*-moz-box-shadow: 10px 10px 5px #ccc;
-    -webkit-box-shadow: 10px 10px 5px #ccc;
-    box-shadow: 10px 10px 5px #ccc;*/
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    border-radius: 25px;
-}
-
-.tile {
+#mg-contents {
     position: relative;
-    float: left;
-    height: 30%;
-    width: 25%;
+    padding-bottom: 50%;
+}
+
+.mg-tile {
+    height: 28%;
+    width: 20%;
     padding: 5px;
     box-sizing: border-box;
-    border: 5px solid #fff;
-}
-.tile:active {
-    border: 1px solid blue;
+    float: left;
+    perspective: 500px;
 }
 
-.back,
-.front {
+.easy .mg-tile, .med .mg-tile {
+    width: 20%;
+}
+.hard .mg-tile {
+    width: 14.8%;
+}
+
+.mg-tile-inner {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .3s;
+    /* transform origin */
+    
+}
+
+.mg-tile-inside,
+.mg-tile-outside
+ {
+    /* position must be set * /
+    /* top and left must be set */
+    /* height and with must be set */
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    box-shadow: 0 0 0 1px #787a80;
+    backface-visibility: hidden;
 }
-
-.back {
+.mg-tile-outside {
+    /* apply a background element /url
+        change bg color so it's not obvious its turned over.
+        set the width.
+        set the defult display because inside, will be different.
+    */
     background: url("../images/default/logo-bw.png") 50% 50% no-repeat;
-    background-color: darkgrey;
+    background-color: #dcdee1;
+    width: 100%;
+    height: 200px;
+
+
+}
+.mg-tile-inside {
+    background-color: #f8fafc;
+    width: 100%;
+    transform: rotateY(180deg);
+}
+.unmatched {
+    
 }
 
-.front {
-    display: none;
+.flipped {
+    transform: rotateY(-180deg);
+}
+
+.flipped img {
+    /*transform: scale3d(15, 25, 30);*/
+}
+
+#button-bucket, h1 {
+    text-align: center;
+    margin: auto;
+    padding: 2%;
+}
+
+#button-bucket .diff {
+    font-size: 60px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px black;
+    cursor: pointer;
+}
+
+.counter {
+    text-align: center;
+}
+
+.counter .diff {
+    border: 0;
+}
+.diff {
+    text-shadow: -1px -2px 5px black;
+    color: darkgray;
+}
+
+#easy {
+    background-color: green;
+}
+#med {
+    background-color: yellow;
+}
+#hard {
+    background-color: red;
 }

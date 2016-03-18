@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Perspectives</title>
+    <style>
+        body {
+            text-align: center;
+            width: 80%;
+            margin: auto;
+        }
+        
+        #div1 {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            margin: 50px;
+            padding: 10px;
+            border: 1px solid black;
+            /*-webkit-perspective: 150px;*/
+            /* Chrome, Safari, Opera  */
+            perspective: 600px;
+        }
+        
+        #red-box {
+            padding: 50px;
+            position: absolute;
+            border: 1px solid black;
+            background-color: red;
+            -webkit-transform: rotateX(0deg);
+            /* Chrome, Safari, Opera  */
+            /*transform: rotateY(25deg);
+            transform-style: preserve-3d;*/
+            text-shadow: 2px 2px 5px black;
+            color: white;
+            /*font-size: 40px;*/
+            /*transform: translateZ(100px);*/
+            transform: rotateY(0deg);
+            transition: all 3s ease;
+            
+        }
+        
+        #red-box.flip {
+            transform: rotateY(-360deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+        <div id="red-box">HELLO</div>
+    </div>
+
+    <script src="scripts/vendor/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+
+</body>
+
+</html>
