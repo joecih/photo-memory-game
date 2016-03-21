@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 
     $('input').click(function() {
-        var diff = $(this).val();
+        var diff = $(this).attr("name");
         if (diff == 'easy') {
             rowSize = 5;
             gridSize = rowSize * 2;

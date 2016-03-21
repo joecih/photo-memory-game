@@ -1,11 +1,13 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 
 img {
     max-width: 100%;
     height: 100%;
     margin: auto;
+    
 }
 
 #mg-wrapper {
@@ -76,9 +78,6 @@ img {
     width: 100%;
     transform: rotateY(180deg);
 }
-.unmatched {
-    
-}
 
 .flipped {
     transform: rotateY(-180deg);
@@ -88,32 +87,42 @@ img {
     /*transform: scale3d(15, 25, 30);*/
 }
 
-#button-bucket, h1 {
+/*#button-bucket, h1 {
     text-align: center;
     margin: auto;
     padding: 2%;
-}
+}*/
 
-#button-bucket .diff {
+/*#button-bucket .diff {
     font-size: 60px;
     border-radius: 20px;
     box-shadow: 2px 2px 8px black;
     cursor: pointer;
-}
+}*/
 
 .counter {
+    display: inline-block;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .counter .diff {
     border: 0;
 }
-.diff {
-    text-shadow: -1px -2px 5px black;
-    color: darkgray;
+
+.w3-container {
+    padding-bottom: 10px;
+}
+.w3-border {
+    border: 2px solid white !important;
 }
 
-#easy {
+/*.diff {
+    text-shadow: -1px -2px 5px black;
+    color: darkgray;
+}*/
+
+/*#easy {
     background-color: green;
 }
 #med {
@@ -121,4 +130,24 @@ img {
 }
 #hard {
     background-color: red;
-}
+}*/
+
+
+.w3-theme-l5 {color:#000; background-color:#f5f7f8}
+.w3-theme-l4 {color:#000; background-color:#dfe3e8}
+.w3-theme-l3 {color:#000; background-color:#bfc7d1}
+.w3-theme-l2 {color:#000; background-color:#9fabba}
+.w3-theme-l1 {color:#fff; background-color:#7f8ea2}
+.w3-theme-d1 {color:#fff; background-color:#59677a}
+.w3-theme-d2 {color:#fff; background-color:#4f5c6d}
+.w3-theme-d3 {color:#fff; background-color:#45505f}
+.w3-theme-d4 {color:#fff; background-color:#3b4552}
+.w3-theme-d5 {color:#fff; background-color:#313944}
+
+.w3-theme-light {color:#000; background-color:#f5f7f8}
+.w3-theme-dark {color:#fff; background-color:#313944}
+.w3-theme-action {color:#fff; background-color:#313944}
+
+.w3-theme {color:#fff; background-color:#647489}
+.w3-text-theme {color:#647489}
+.w3-theme-border {border-color:#647489}
