@@ -44,7 +44,7 @@ $(document).ready(function() {
 
         for (var i = 0; i < gridArray.length; i++) {
             var html = "<div class='mg-tile'>";
-            html += "<div class='mg-tile-inner unmatched flipped'>";
+            html += "<div class='w3-col m1 w3-center mg-tile-inner unmatched flipped'>";
             html += "<div class='mg-tile-outside'></div>";
             html += "<div class='mg-tile-inside'>" + gridArray[i] + "</div>";
             html += "</div>";

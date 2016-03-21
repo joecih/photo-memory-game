@@ -5,12 +5,12 @@ body {
 
 img {
     max-width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     margin: auto;
     
 }
 
-#mg-wrapper {
+/*#mg-wrapper {
     width: 100%;
     max-width: 1024px;
     margin: auto;
@@ -46,14 +46,11 @@ img {
     transition: transform .3s;
     /* transform origin */
     
-}
 
-.mg-tile-inside,
+
+/*.mg-tile-inside,
 .mg-tile-outside
  {
-    /* position must be set * /
-    /* top and left must be set */
-    /* height and with must be set */
     position: absolute;
     top: 0;
     left: 0;
@@ -61,17 +58,10 @@ img {
     backface-visibility: hidden;
 }
 .mg-tile-outside {
-    /* apply a background element /url
-        change bg color so it's not obvious its turned over.
-        set the width.
-        set the defult display because inside, will be different.
-    */
     background: url("../images/default/logo-bw.png") 50% 50% no-repeat;
     background-color: #dcdee1;
-    width: 100%;
+    /*width: 100%;
     height: 200px;
-
-
 }
 .mg-tile-inside {
     background-color: #f8fafc;
@@ -81,7 +71,7 @@ img {
 
 .flipped {
     transform: rotateY(-180deg);
-}
+}*/
 
 .flipped img {
     /*transform: scale3d(15, 25, 30);*/
@@ -100,6 +90,10 @@ img {
     cursor: pointer;
 }*/
 
+.mg-tile {
+    /*border: 1px dotted red;*/
+}
+
 .counter {
     display: inline-block;
     text-align: center;
@@ -115,6 +109,12 @@ img {
 }
 .w3-border {
     border: 2px solid white !important;
+}
+.w3-col {
+    width: 20%;
+}
+.w3-col.m1{
+    width: 20%;
 }
 
 /*.diff {
