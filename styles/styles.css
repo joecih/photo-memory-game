@@ -10,68 +10,75 @@ img {
     
 }
 
-/*#mg-wrapper {
-    width: 100%;
+#mg-wrapper {
+    /*width: 100%;
     max-width: 1024px;
-    margin: auto;
+    margin: auto;*/
 }
 
 #mg-contents {
     position: relative;
     padding-bottom: 50%;
+    padding: 10px;
+    border: 1px dotted red;
 }
 
 .mg-tile {
-    height: 28%;
+    /*height: 28%;
     width: 20%;
-    padding: 5px;
-    box-sizing: border-box;
-    float: left;
-    perspective: 500px;
+    padding: 5px;*/
+    /*box-sizing: border-box;*/
+    /*float: left;*/
+    /*perspective: 500px;*/
+    position: relative;
 }
 
-.easy .mg-tile, .med .mg-tile {
+/*.easy .mg-tile, .med .mg-tile {
     width: 20%;
 }
 .hard .mg-tile {
     width: 14.8%;
-}
+}*/
 
 .mg-tile-inner {
-    width: 100%;
-    height: 100%;
+    /*width: 100%;
+    height: 100%;*/
     cursor: pointer;
-    position: relative;
+    /*position: relative;*/
     transform-style: preserve-3d;
     transition: transform .3s;
     /* transform origin */
-    
+}
 
 
-/*.mg-tile-inside,
+.mg-tile-inside,
 .mg-tile-outside
  {
-    position: absolute;
+    /*position: absolute;
     top: 0;
-    left: 0;
+    left: 0;*/
     box-shadow: 0 0 0 1px #787a80;
     backface-visibility: hidden;
 }
 .mg-tile-outside {
+    position: absolute;
+    top: 0;
     background: url("../images/default/logo-bw.png") 50% 50% no-repeat;
     background-color: #dcdee1;
-    /*width: 100%;
-    height: 200px;
+    /*max-width: 100%;
+    margin: auto;*/
+    height: 100%;
+    width: 100%;
 }
 .mg-tile-inside {
     background-color: #f8fafc;
-    width: 100%;
+    /*width: 100%;*/
     transform: rotateY(180deg);
 }
 
 .flipped {
     transform: rotateY(-180deg);
-}*/
+}
 
 .flipped img {
     /*transform: scale3d(15, 25, 30);*/
@@ -106,6 +113,7 @@ img {
 
 .w3-container {
     padding-bottom: 10px;
+    box-shadow: 2px 2px 8px black;
 }
 .w3-border {
     border: 2px solid white !important;

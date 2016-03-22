@@ -15,7 +15,8 @@ var cards = [
     "<img src='images/default/monsters-13.png'>",
     "<img src='images/default/monsters-14.png'>",
     "<img src='images/default/monsters-15.png'>",
-    "<img src='images/default/monsters-16.png'>"
+    "<img src='images/default/monsters-16.png'>",
+    "<img src='images/default/monsters-17.png'>"
 ];
 
 //document.write(cards[0]);
@@ -33,8 +34,8 @@ $(document).ready(function() {
             rowSize = 5;
             gridSize = rowSize * 4;
         } else if (diff == 'hard') {
-            rowSize = 7;
-            gridSize = rowSize * 4;
+            rowSize = 8;
+            gridSize = rowSize * 6;
         }
 
         $('#button-bucket').toggle();
@@ -43,7 +44,7 @@ $(document).ready(function() {
 
 
         for (var i = 0; i < gridArray.length; i++) {
-            var html = "<div class='mg-tile'>";
+            var html = "<div class='mg-tile w3-center'>";
             html += "<div class='w3-col m1 w3-center mg-tile-inner unmatched flipped'>";
             html += "<div class='mg-tile-outside'></div>";
             html += "<div class='mg-tile-inside'>" + gridArray[i] + "</div>";
@@ -107,4 +108,9 @@ $(document).ready(function() {
 
         return output;
     }
+
+    $(window).resize(function() {
+        console.log(window.innerWidth + " | " + window.innerHeight);
+       
+    });
 });
